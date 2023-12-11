@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="burger__menu">
+            <div class="head">
+                <ul class="two__firstPart">
+                    <li class="menu__list-one" id="man__header">Мужчинам <div class="line1" id="line1__header"></div></li>
+                    <li class="menu__list-one" id="woman__header">Женщинам <div class="line2" id="line2__header"></div></li>
+                    <li class="menu__list-one" id="child__header">Детям <div class="line3" id="line3__header"></div></li>
+                </ul>
+                <div class="head__cont">
+                    <div class="burger"  onclick="myFunction()">
+                        <span></span>
+                    </div>
+                    <img src="img/search.svg" alt="" class="head__img">
+                </div>
+            </div>
+            <div class="burger__none">
+                <ul class="stock__burger-menu">
+                    <li class="stock__mune-list">Новинки <img src="img/next3.svg" alt=""></li>
+                    <div class="burger__line"></div>
+                    <li class="stock__mune-list">Сноуборд<img src="img/next3.svg" alt=""></li>
+                    <div class="burger__line"></div>
+                    <li class="stock__mune-list">Лыжи<img src="img/next3.svg" alt=""></li>
+                    <div class="burger__line"></div>
+                    <li class="stock__mune-list">Скейт<img src="img/next3.svg" alt=""></li>
+                    <div class="burger__line"></div>
+                    <li class="stock__mune-list">Лонгборд<img src="img/next3.svg" alt=""></li>
+                    <div class="burger__line"></div>
+                    <li class="stock__mune-list">Вейкборд<img src="img/next3.svg" alt=""></li>
+                    <div class="burger__line"></div>
+                    <li class="stock__mune-list">Серф<img src="img/next3.svg" alt=""></li>
+                    <div class="burger__line"></div>
+                    <li class="stock__mune-list">Sup<img src="img/next3.svg" alt=""></li>
+                    <div class="burger__line"></div>
+                    <li class="stock__mune-list">Одежда<img src="img/next3.svg" alt=""></li>
+                    <div class="burger__line"></div>
+                    <li class="stock__mune-list">Обувь<img src="img/next3.svg" alt=""></li>
+                    <div class="burger__line"></div>
+                    <li class="stock__mune-list">Аксессуары<img src="img/next3.svg" alt=""></li>
+                    <div class="burger__line"></div>
+                    <li class="stock__mune-list">Бренды<img src="img/next3.svg" alt=""></li>
+                    <div class="burger__line"></div>
+                </ul>
+                <div class="personal">
+                    <p class="personal__title">Личный кабинет</p>
+                </div>
+                <div class="buttons__burger">
+                    <button class="stepInto__burger">Войти</button>
+                    <button class="singIn__burger">Зарегистрироваться</button>
+                </div>
+                <div class="burger__line2"></div>
+                <div class="location">
+                    <img src="img/location.svg" alt="">
+                    <div class="yourregion">Ваш регион доставки:   Москва<img src="img/" alt=""></div>
+                </div>
+                <div class="burger__footer">
+                    <ul class="burgerUl">
+                        <li class="burgerLi"><a href="#">Магазины</a></li>
+                        <li class="burgerLi"><a href="#">Помощь</a></li>
+                        <li class="burgerLi"><a href="#">Блоги</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__inner">
+            <div class="container">
+                <nav class="menu">
+                    <ul class="header__firstPart">
+                        <li class="menu__list-item"><img src="img/position.svg" alt=""></li>
+                        <li class="menu__list-item"><p class="youRegion">Ваш регион доставки: <a href="#" class="region">Москва</a><img src="img/strelLow.svg" alt=""></p></li>
+                        <li class="menu__list-item"><a href="#" class="header__shop">Магазины</a></li>
+                        <li class="menu__list-item"><a href="#" class="header__help">Помощь</a></li>
+                        <li class="menu__list-item"><a href="#" class="header__blogs">Блоги</a></li>
+                    </ul>
+                    <ul class="header__secondPart">
+                        <li class="menu__list-item"><img src="img/Car.svg" alt=""></li>
+                        <li class="menu__list-item"><p class="freeDelivery">Бесплатная доставка *</p></li>
+                        <li class="menu__list-item"><img src="img/purse.svg" alt=""></li>
+                        <li class="menu__list-item"><p class="payment">Оплата при получении</p></li>
+                        <li class="menu__list-item"><img src="img/return.svg" alt=""></li>
+                        <li class="menu__list-item"><p class="return">Возврат в течение 14 дней</p></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__two">
+                <div class="head__burger-cont">
+                    <div class="burger" id="burger"  onclick="myFunction()">
+                        <span></span>
+                    </div>
+                    <img src="img/search.svg" alt="" class="head__img">
+                </div>
+                <ul class="two__firstPart">
+                    <li class="menu__list-one" id="man__header">Мужчинам <div class="line1" id="line1__header"></div></li>
+                    <li class="menu__list-one" id="woman__header">Женщинам <div class="line2" id="line2__header"></div></li>
+                    <li class="menu__list-one" id="child__header">Детям <div class="line3" id="line3__header"></div></li>
+                </ul>
+                <div class="logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <ul class="two__secondPart">
+                    <li class="menu__list-two two__none"><img src="img/people.svg" alt="">ВОЙТИ</li>
+                    <li class="menu__list-two"><img src="img/star.svg" alt=""><p  class="two__none">ИЗБРАННОЕ</p></li>
+                    <li class="menu__list-two two__padding"><img src="img/basket.svg" alt=""><p  class="two__none">КОРЗИНА</p></li>
+                    <li class="menu__list-two two__none"><img src="img/search.svg" alt="">ПОИСК</li>
+                </ul>
+            </div>
+            <ul class="tree__firstPart">
+                <li class="menu__list-thee" id="man__header2">Мужчинам <div class="line1" id="line1__header2"></div></li>
+                <li class="menu__list-tree" id="woman__header2">Женщинам <div class="line2" id="line2__header2"></div></li>
+                <li class="menu__list-tree" id="child__header2">Детям <div class="line3" id="line3__header2"></div></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="stock">
+                <ul class="stock__menu">
+                    <li class="stock__mune-list">Новинки</li>
+                    <li class="stock__mune-list">Сноуборд</li>
+                    <li class="stock__mune-list">Лыжи</li>
+                    <li class="stock__mune-list">Скейт</li>
+                    <li class="stock__mune-list">Лонгборд</li>
+                    <li class="stock__mune-list">Вейкборд</li>
+                    <li class="stock__mune-list">Серф</li>
+                    <li class="stock__mune-list">Sup</li>
+                    <li class="stock__mune-list">Одежда</li>
+                    <li class="stock__mune-list">Обувь</li>
+                    <li class="stock__mune-list">Аксессуары</li>
+                    <li class="stock__mune-list">Бренды</li>
+                    <li class="stock__mune-list">Распродажа</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="swiper swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/sliderImg.svg" alt=""></div>
+                <div class="swiper-slide sliderpred"><img src="img/Rectangle.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/sliderImg.svg" alt=""></div>
+            </div>
+            <div class="custom-prev custom-prev1"><img src="img/prev.svg" alt=""></div>
+            <div class="custom-next custom-next1"><img src="img/next.svg" alt=""></div>
+        </div>
+        <div class="sponsors">
+            <div class="container">
+                <div class="sponsor__img">
+                    <img src="img/spons1.svg" alt="">
+                    <img src="img/spons2.svg" alt="">
+                    <img src="img/spons3.svg" alt="">
+                    <img src="img/spons4.svg" alt="">
+                    <img src="img/spons5.svg" alt="">
+                    <img src="img/spons6.svg" alt="">
+                    <img src="img/spons7.svg" alt="" class="sponsors__none">
+                    <img src="img/spons8.svg" alt="" class="sponsors__none">
+                    <img src="img/spons9.svg" alt="" class="sponsors__none">
+                    <img src="img/spons10.svg" alt="" class="sponsors__none">
+                </div>
+            </div>
+        </div>
+        <div class="shares">
+            <div class="container">
+                <div class="shares__img">
+                    <div class="share__cont1">
+                        <img src="img/share1.svg" alt="">
+                        <div class="share__text1">НАЗВАНИЕ АКЦИИ №1</div>
+                    </div>
+                    <div class="share__cont2">
+                        <img src="img/share2.svg" alt="">
+                        <div class="share__text2">НАЗВАНИЕ АКЦИИ №2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="new">
+            <p class="new__title">Новинки</p>
+            <div class="container">
+                <div class="slider single-item">
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star1">
+                            <img src="img/new1.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star2">
+                            <img src="img/new2.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star3">
+                            <img src="img/new3.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star4">
+                            <img src="img/new4.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star5">
+                            <img src="img/new5.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star1">
+                            <img src="img/new1.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star2">
+                            <img src="img/new2.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star3">
+                            <img src="img/new3.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                </div>
+                <div class="new__btn-cont">
+                    <button href="#" class="new__btn">Показать больше</button>
+                </div>
+            </div>
+        </div>
+        <div class="name__share">
+            <div class="container">
+                <div class="nameShare__img">
+                    <img src="img/dcImg.svg" alt="">
+                </div>
+                <p class="name__share-title">Название Акции</p>
+                <div class="name__cont">
+                    <p class="name__share-text">Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою противоположность как раз этому. </p>
+                </div>
+            </div>
+        </div>
+        <div class="new">
+            <p class="new__title">DC Shoes популярное в коллекции</p>
+            <div class="container">
+                <div class="slider single-item">
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star1">
+                            <img src="img/new1.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star2">
+                            <img src="img/new2.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star3">
+                            <img src="img/new3.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star4">
+                            <img src="img/new4.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star5">
+                            <img src="img/new5.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star1">
+                            <img src="img/new1.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star2">
+                            <img src="img/new2.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new__cont">
+                            <img src="img/newStar.svg" alt="" class="new__star" id="new__star3">
+                            <img src="img/new3.svg" alt="">
+                        </div>
+                        <div class="new__name">LIB TECH</div>
+                        <div class="new__mansnoy">Мужской Сноуборд</div>
+                        <div class="new__price">34392 ₽</div>
+                    </div>
+                </div>
+                <div class="new__btn-cont">
+                    <button href="#" class="new__btn">Показать больше</button>
+                </div>
+            </div>
+        </div>
+        <div class="name__blog">
+            <div class="swiper swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/videoBlog.svg" alt="" class="nameBlog__img">
+                        <div class="name__blog-cont">
+                            <div class="name__blog-link">
+                                <a href="#" class="blogs">Блоги</a>
+                                <a href="#" class="fulblogs">Все блоги</a>
+                            </div>
+                            <div class="name__blog-next">
+                                <p class="blog__title">Очень преочень длинное название блога</p>
+                                <p class="blog__text1">Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою противоположность как раз этому. </p>
+                                <p class="blog__text2">Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою противоположность как раз этому...</p>
+                                <div class="blog__readMore">
+                                    <div href="#" class="blog__line"></div>
+                                    <a href="#" class="blog__readMore-link">Читать продолжение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/videoBlog.svg" alt="" class="nameBlog__img">
+                        <div class="name__blog-cont">
+                            <div class="name__blog-link">
+                                <a href="#" class="blogs">Блоги</a>
+                                <a href="#" class="fulblogs">Все блоги</a>
+                            </div>
+                            <div class="name__blog-next">
+                                <p class="blog__title">Очень преочень длинное название блога</p>
+                                <p class="blog__text1">Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою противоположность как раз этому. </p>
+                                <p class="blog__text2">Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою противоположность как раз этому...</p>
+                                <div class="blog__readMore">
+                                    <div href="#" class="blog__line"></div>
+                                    <a href="#" class="blog__readMore-link">Читать продолжение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/videoBlog.svg" alt="" class="nameBlog__img">
+                        <div class="name__blog-cont">
+                            <div class="name__blog-link">
+                                <a href="#" class="blogs">Блоги</a>
+                                <a href="#" class="fulblogs">Все блоги</a>
+                            </div>
+                            <div class="name__blog-next">
+                                <p class="blog__title">Очень преочень длинное название блога</p>
+                                <p class="blog__text1">Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою противоположность как раз этому. </p>
+                                <p class="blog__text2">Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою противоположность как раз этому...</p>
+                                <div class="blog__readMore">
+                                    <div href="#" class="blog__line"></div>
+                                    <a href="#" class="blog__readMore-link">Читать продолжение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-prev custom-prev1"><img src="img/prev.svg" alt=""></div>
+                <div class="custom-next custom-next1"><img src="img/next.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="lastpart">
+            <div class="container">
+                <div class="lastpart__cont">
+                    <div class="one__crad">
+                        <img src="img/progrloal.svg" alt="" class="one__img">
+                        <div class="one__card-cont">
+                            <img src="img/logoClub.svg" alt="">
+                            <p class="one__title">Программа лояльности</p>
+                            <p class="one__text">Зарабатывайте баллы и получайте преимущества</p>
+                            <button class="one__button">Вступить в клуб</button>
+                        </div>
+                    </div>
+                    <div class="two__card">
+                        <img src="img/discount.svg" alt="" class="two__img">
+                        <div class="two__card-cont">
+                            <img src="img/cunsImg.svg" alt="">
+                            <p class="two__title">Скидка -10%</p>
+                            <p class="two__text">За подписку на наши новости</p>
+                            <div class="email-input">
+                                <input type="email" placeholder="Email">
+                                <img class="decorative-image" src="img/blackConver.svg">
+                                <img class="submit-image" src="img/blackStrelka.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <img src="img/footer.svg" alt="" class="footer__img">
+        <div class="footer__wrapper">
+            <div class="container">
+                <div class="footer__one">
+                    <div class="logo">
+                        <img src="img/footer__logo.png" alt="" class="logo__img">
+                        <img src="img/logo-text.svg" alt="">
+                    </div>
+                    <div class="mailing">
+                        <a href="#" class="mailing__link">
+                            <div class="mailing__cont">
+                                <img src="img/envelope.svg" alt="" class="envelope">
+                                <p>Подпишись на рассылку и получи  <span>-10%</span>  скидку</p>
+                            </div>
+                            <img src="img/send.svg" alt="" class="send">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__line"></div>
+                <div class="footer__link">
+                    <div class="dowland">
+                        <p class="dowland__text">Доступ к ранним релизам в приложении</p>
+                        <a href="#" class="dowland__link">
+                            <div class="dowland__in">
+                                <div class="apstore">
+                                    <img src="img/apple.svg" alt="" class="appstore__img1">
+                                    <div class="appstore__text">
+                                        <img src="img/Downloadonthe.svg" alt="" class="appstore__img2">
+                                        <img src="img/AppStore.svg" alt="" class="appstore__img3">
+                                    </div>
+                                </div>
+                                <div class="google__play">
+                                    <img src="img/googlePlay.svg" alt="" class="appstore__img1">
+                                    <div class="appstore__text">
+                                        <img src="img/Getiton.svg" alt="" class="appstore__img2">
+                                        <img src="img/GooglePlaytext.svg" alt="" class="appstore__img3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qrcod">
+                                <img src="img/qrcod.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contacts">
+                        <p class="contacts__title">Контакты</p>
+                        <div class="number">
+                            <img src="img/telefon.svg" alt="">
+                            <div class="number__cont">
+                                <p class="telefon__number">8 (800) 511-74-68 </p>
+                                <p class="telefon__free">Бесплатная горячая линия Ежедневно с 9 до 21</p>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <img src="img/envelope__white.svg" alt="">
+                            <div class="email__cont">
+                                <p class="email__title">Контактный Email</p>
+                                <p class="email__text">info@brd.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__menu">
+                        <ul class="footer__menu-list fotmen1"><li class="footer__menu-item"><p class="footer__menu-title">Помощь</p></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Доставка</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Оплата</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Возврат</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Отзывы (2290)</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Акции и скидки</a></li>
+                        </ul>
+                        <ul class="footer__menu-list fotmen2"><li class="footer__menu-item"><p class="footer__menu-title">Компания</p></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">О boardriders</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Вакансии</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Публичная оферта</a></li>
+                        </ul>
+                        <ul class="footer__menu-list footer__menu-listMedia"><li class="footer__menu-item"><p class="footer__menu-title">Boardriders Inc.</p></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Франчайзинг</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Quiksilver</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Roxy</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">DC Shoes</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Boardriders Club</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__black">
+                <div class="container">
+                    <div class="footer__line2"></div>
+                    <div class="footer__blac-cont">
+                        <div class="social">
+                            <img src="img/twitter.svg" alt="">
+                            <img src="img/facebook.svg" alt="">
+                            <img src="img/twitch.svg" alt="">
+                            <img src="img/youtube.svg" alt="">
+                            <img src="img/instagram.svg" alt="">
+                        </div>
+                        <p>© 2020 Brd.ru. Все права защищены</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="/slick/slick.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
